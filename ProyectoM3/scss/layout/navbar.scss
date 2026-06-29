@@ -1,0 +1,32 @@
+.navbar{
+
+background:$bg-dark;
+
+padding:20px;
+
+
+.navbar-brand{
+
+color:$primary-color !important;
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+
+.nav-link{
+
+color:white !important;
+
+
+&:hover{
+
+color:$secondary-color !important;
+
+}
+
+}
+
+}

@@ -1,0 +1,94 @@
+.container-custom{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* modelo de caixa */
+
+.section{
+
+    padding:80px 0;
+
+}
+
+
+
+
+/* Flexbox Hero */
+
+.hero{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+
+
+.hero-content{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+
+
+
+/* Cards com Grid */
+
+
+.cards-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+/* Responsivo */
+
+
+@media(max-width:768px){
+
+
+.hero-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.cards-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
