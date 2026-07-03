@@ -14,8 +14,22 @@ transition:.3s;
 &:hover{
 
 background:$secondary-color;
-
 }
+}
+// ==========================
+// MIXINS
+// ==========================
 
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
 
+  @if $breakpoint == lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
 }
