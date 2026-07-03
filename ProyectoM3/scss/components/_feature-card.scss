@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+
+// ==========================
+// FEATURES
+// ==========================
+
+.features {
+  background: $color-bg-features;
+  padding: $spacing-3xl 0;
+}
+
+.feature-card {
+  background: $color-bg-card-feature;
+  border-radius: $radius-md;
+  padding: 35px 20px;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  h4 {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 90px;
+  }
+}
+
+.feature-icon {
+  width: 90px;
+  margin-bottom: 20px;
+}
