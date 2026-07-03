@@ -1,33 +1,19 @@
-.card{
+@use "../abstracts/variables" as *;
 
+.card {
+  background: $color-bg-secondary;
+  color: $color-white;
+  border: none;
+  border-radius: $radius-lg;
+  padding: 20px;
+  height: 100%;
+  transition: 0.3s;
 
-background:$bg-card;
+  &:hover {
+    transform: translateY(-10px);
+  }
 
-color:white;
-
-border:none;
-
-border-radius:25px;
-
-padding:20px;
-
-transition:.3s;
-
-
-
-&:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-
-h4{
-
-color:$secondary-color;
-
-}
-
-
+  h4 {
+    color: $color-primary-light;
+  }
 }
