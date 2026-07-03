@@ -1,32 +1,31 @@
-.navbar{
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
-background:$bg-dark;
+// ==========================
+// NAVBAR
+// ==========================
+.navbar {
+  background: $color-bg;
+  padding: $spacing-md 0;
 
-padding:20px;
-
-
-.navbar-brand{
-
-color:$primary-color !important;
-
-font-size:28px;
-
-font-weight:bold;
-
+  &-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: $color-primary !important;
+  }
 }
 
+.nav-link {
+  color: $color-white !important;
+  margin-left: $spacing-md;
 
-.nav-link{
-
-color:white !important;
-
-
-&:hover{
-
-color:$secondary-color !important;
-
+  &:hover {
+    color: $color-primary-light !important;
+  }
 }
 
-}
-
+.navbar-nav {
+  @include respond(md) {
+    text-align: center;
+  }
 }
