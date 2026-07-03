@@ -1,7 +1,14 @@
-.modal-content{
+@use "../abstracts/variables" as *;
 
-background:$bg-card;
+// ==========================
+// MODAL
+// ==========================
 
-color:white;
+.modal-content {
+  background: $color-bg-secondary;
+  color: $color-white;
+}
 
+.modal-header {
+  border-bottom: 1px solid $color-border;
 }
