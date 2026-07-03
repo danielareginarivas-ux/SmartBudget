@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+// ==========================
+// BASE
+// ==========================
+
+body {
+  background: $color-bg;
+  color: $color-white;
+  font-family: $font-primary;
+}
+
+textarea {
+  min-height: 150px;
+}
