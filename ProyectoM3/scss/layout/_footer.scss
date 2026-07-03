@@ -1,11 +1,9 @@
-footer{
+@use "../abstracts/variables" as *;
 
-background:#080811;
-
-text-align:center;
-
-padding:30px;
-
-color:$text-muted;
-
+footer {
+  background: $color-footer;
+  text-align: center;
+  padding: $spacing-lg;
+  margin-top: 50px;
+  color: $color-text-footer;
 }
